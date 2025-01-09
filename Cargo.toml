@@ -1,0 +1,17 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+edition = "2021"
+resolver = "1"
+
+[lib]
+name = "hello_world"
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+solana-program = "2.1.7"
+
+[dev-dependencies]
+solana-program-test = "2.1.7"
+solana-sdk = "2.1.7"
+tokio = "1.43.0"
